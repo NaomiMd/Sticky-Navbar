@@ -27,8 +27,33 @@ h1{
     text-align: center;
 }
 
-li{
-    display: inline;
-     
+ul{
+    display: flex;   
+    list-style-type: none;
+    align-items: center;
 }
 
+header{
+    display: flex;
+    position: fixed;
+    background-color: aliceblue;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px black;
+}
+
+header ul li a {
+    text-decoration: none;
+    margin:  0 10px;
+    color: black;
+    font-family: cursive;
+
+}
+
+.navbar.active{
+    background-color: black;
+}
+
+.navbar.active ul li a{
+    color: white;
+}
